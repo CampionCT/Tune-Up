@@ -1,0 +1,1 @@
+winget.exe upgrade -r --accept-package-agreements
