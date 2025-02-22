@@ -9,3 +9,5 @@ dism.exe /online /cleanup-image /scanhealth
 dism.exe /online /cleanup-image /restorehealth
 
 winget.exe upgrade --accept-package-agreements -r
+
+Pause
