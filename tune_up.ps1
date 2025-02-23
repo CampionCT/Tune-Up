@@ -3,14 +3,11 @@ Import-Module PSWindowsUpdate
 
 Get-WindowsUpdate -ListAvailable | Where-Object {$_.IsInstalled -eq $false } | Install-WindowsUpdate
 
-echo
-sfc.exe /scannow
+Write-Output sfc.exe /scannow
 
-echo
-dism.exe /online /cleanup-image /scanhealth
-dism.exe /online /cleanup-image /restorehealth
+Write-Output dism.exe /online /cleanup-image /scanhealth
+Write-Output dism.exe /online /cleanup-image /restorehealth
 
-echo
-winget.exe upgrade --accept-package-agreements -r
+Write-Output winget.exe upgrade --accept-package-agreements -r
 
 Pause
