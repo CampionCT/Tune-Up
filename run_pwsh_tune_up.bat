@@ -1,4 +1,4 @@
-@ehco OFF
+@echo
 
 SET ThisScriptsDirectory=%~dp0
 SET PowerShellScriptPath=%ThisScriptsDirectory%tune_up.ps1
